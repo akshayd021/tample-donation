@@ -26,7 +26,7 @@ body {
   width: 100%;
   border-radius: 6px;
   background: #ffc700;
-  padding: 40px 20px 93px 20px;
+  padding: 40px 20px 122px 20px;
 }
 
 .footer-row {
@@ -59,14 +59,45 @@ p text {
   font-family: "Poppins", sans-serif !important;
 }
 
-form {
+.form {
   display: flex;
-  gap: 5px;
+  align-items: center;
 }
 
-.input::placeholder {
-  color: gray;
+
+.input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
 }
+
+.input {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px 40px 10px 10px;
+  font-size: 16px;
+  width: 100%;
+  background: #f5ac05;
+  outline: none;
+  flex: 1;
+  padding-right: 50px; /* Add padding to accommodate the image */
+  box-sizing: border-box;
+}
+
+.input:focus {
+  border-color: #ff2200;
+}
+
+.input-img {
+  position: absolute;
+  right: 10px; /* Adjust as needed */
+  top: 50%;
+  color: white;
+  cursor: pointer;
+  transform: translateY(-50%);
+  pointer-events: none; /* Prevent the image from blocking input interactions */
+}
+
 /* 
 .footer-col form button {
   background: #fff;
@@ -110,82 +141,10 @@ form {
   color: rgb(27, 26, 26);
 }
 
-.input-container {
-  position: relative;
-  display: flex;
-  align-items: center;
-}
-
-.input {
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  padding: 10px 40px 10px 10px;
-  font-size: 16px;
-  width: 70%;
-  background: #f5ac05;
-  outline: none;
-}
-
-.input:focus {
-  border-color: #ff2200;
-}
-
-.arrow-icon {
+.footer-end {
   position: absolute;
-  left: 360px;
-  pointer-events: none;
-  color: #000;
-  margin-top: 10px;
-}
-.first {
-  position: absolute;
-  left: 0;
   margin-bottom: 0;
-}
-.sec {
-  position: absolute;
   left: 0;
-  bottom: 0px;
-}
-.third {
-  position: absolute;
-  left: 300px;
-  bottom: 0px;
-}
-.four {
-  position: absolute;
-  left: 400px;
-  bottom: 0px;
-}
-.five {
-  position: absolute;
-  left: 800px;
-  bottom: 0;
-}
-.six {
-  position: absolute;
-  left: 900px;
-  bottom: 0;
-}
-.seven{
-    position: absolute;
-    left: 1200px;
-    bottom: 0;
-}
-.eight{
-    position: absolute;
-    left: 1300px;
-    bottom: 0;
-}
-.nine{
-    position: absolute;
-    left:1400px;
-    bottom: 0;
-}
-.ten {
-  position: absolute;
-  bottom: 0;
-left: 1600px;
 }
 @media (max-width: 768px) {
   .icons-container {

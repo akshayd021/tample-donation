@@ -1,0 +1,100 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Poppins", sans-serif !important;
+}
+.heading {
+  font-size: 30px;
+  color: #be161e;
+  font-weight: 500;
+  margin-top: 30px;
+  text-align: center;
+}
+.yellow-head {
+  text-align: center;
+  color: #ffc700;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif !important;
+  margin-top: 10px;
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+.head-design {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+/* div.gallery:hover {
+  border: 1px solid #777;
+  border-radius: 5px;
+} */
+.head {
+  font-size: 25px;
+  font-weight: 500;
+  border-bottom: 2px solid #be161e;
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-left: 6px;
+}
+.Gallary {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pagination .page-link {
+  color: #be161e;
+}
+
+.pagination .page-item.active .page-link {
+  background-color: #be161e;
+  border-color: #be161e;
+  color: white;
+}
+
+.pagination .page-item {
+  margin-right: 10px;
+}
+
+.pagination .page-item:last-child {
+  margin-right: 0;
+}
+@media only screen and (max-width: 600px) {
+  .heading {
+    font-size: 18px;
+  }
+  .yellow-head {
+    font-size: 18px;
+  }
+  .head {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (max-device-width: 1024px) {
+  .heading {
+    font-size: 28px;
+  }
+  .head {
+    font-size: 24px;
+  }
+}
