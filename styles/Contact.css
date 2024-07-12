@@ -96,13 +96,14 @@ body {
   border: none;
   padding: 5px 20px;
   cursor: pointer;
-  align-self: flex-end;
   color: white;
   border: 1px solid #be161e;
   border-radius: 5px;
   display: flex;
   align-items: center;
   gap: 8px;
+  justify-content: center;
+  margin: 10px auto;
 }
 .map img {
   width: 100%;
@@ -191,20 +192,27 @@ body {
   .yellow-head {
     font-size: 18px;
   }
-  .head h2{
+  .head h2 {
     font-size: 19px;
   }
   .head p {
     font-size: 18px;
   }
-  .contact p{
+  .contact p {
     font-size: 15px;
   }
-  .contact span{
+  .contact span {
     font-size: 12px;
   }
   .map img {
-  height: 350px;
+    height: 350px;
+  }
+  .map img {
+    height: auto;
+    margin-top: 20px;
+  }
+  .padding {
+    padding: 10px;
   }
 }
 
@@ -216,5 +224,12 @@ body {
     display: flex;
     align-items: center;
     gap: 20px;
+  }
+  .map img {
+    height: auto;
+    margin-top: 42px;
+  }
+  .max span {
+    max-width: 200px;
   }
 }

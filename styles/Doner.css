@@ -46,8 +46,10 @@ body {
 .date-sec {
   display: flex;
   align-items: center;
+  
   gap: 20px;
 }
+
 
 .date-col {
   display: flex;
@@ -179,15 +181,25 @@ th {
   .yellow-head {
     font-size: 18px;
   }
+  .date-sec input {
+    width: 180px;
+  }
+  .date-sec .yellow{
+    flex-direction: column;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .heading {
     font-size: 28px;
   }
+  .yellow-head {
+    font-size: 28px;
+  }
+}
   .date-sec :nth-last-child() {
     display: flex;
     align-items: center;
     gap: 20px;
-  }
+  
 }

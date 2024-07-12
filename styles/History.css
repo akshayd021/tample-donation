@@ -53,6 +53,9 @@ body {
 .img-text {
   margin-bottom: 10px;
 }
+.text h6:nth-child(-n+2) {
+  width: 200%;
+}
 .text p:before {
   content: "•";
   color: #000;
@@ -189,4 +192,7 @@ body {
   .head {
     font-size: 22px;
   }
+  .yellow-head{
+    font-size: 28px;
+  } 
 }

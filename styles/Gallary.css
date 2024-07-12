@@ -89,12 +89,25 @@ div.gallery img {
     font-size: 18px;
   }
 }
-
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (max-device-width: 1024px) {
+/* @media only screen and (min-width: 540px)and (max-width: 750px) {
+  .heading {
+    font-size: 18px;
+  }
+  .yellow-head {
+    font-size: 18px;
+  }
+  .head {
+    font-size: 18px;
+  }
+} */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
   .heading {
     font-size: 28px;
   }
   .head {
     font-size: 24px;
+  }
+  .yellow-head {
+    font-size: 28px;
   }
 }
