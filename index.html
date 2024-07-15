@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles/Navbar.css" />
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+    body {
+      font-family: "Poppins", sans-serif !important;
+    }
+  </style>
+
+  <body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+    <nav class="d">
+      <div class="drawer-d">
+        <ul>
+          <li><a href="#" class="active nav-ite" id="home-link">Home</a></li>
+          <li><a href="#" class="nav-item" id="doner-link">Doner</a></li>
+          <li><a href="#" class="nav-item" id="gallary-link">Gallary</a></li>
+          <li><a href="#" class="nav-item" id="history-link">History</a></li>
+          <li><a href="#" class="nav-item" id="contact-link">Contact</a></li>
+          <li>
+            <a href="#" class="nav-item" id="contribute-link">Contribute</a>
+          </li>
+          <li>
+            <a href="#" class="nav-item" id="commitee-link">Commitee</a>
+          </li>
+          <li>
+            <a href="#" class="nav-item" id="member-login-link">Member Login</a>
+          </li>
+        </ul>
+        <button class="yellow-button">Donate Now</button>
+      </div>
+    </nav>
+    <nav class="navbar-rr">
+      <div class="space-bw">
+        <div class="menu-icon" onclick="openDrawer()">
+          <i class="fas fa-bars"></i>
+        </div>
+        <button class="yellow-button">Donate Now</button>
+      </div>
+
+      <div class="left-drawer" id="leftDrawer">
+        <div class="close-icon" onclick="closeDrawer()">
+          <i class="fas fa-times"></i>
+        </div>
+        <div class="drawer-content">
+          <ul>
+            <li><a href="#" class="nav-item" id="home-link">Home</a></li>
+            <li><a href="#" class="nav-item" id="doner-link">Doner</a></li>
+            <li><a href="#" class="nav-item" id="gallary-link">Gallary</a></li>
+            <li><a href="#" class="nav-item" id="history-link">History</a></li>
+            <li><a href="#" class="nav-item" id="contact-link">Contact</a></li>
+            <li>
+              <a href="#" class="nav-item" id="contribute-link">Contribute</a>
+            </li>
+            <li>
+              <a href="#" class="nav-item" id="commitee-link">Commitee</a>
+            </li>
+            <li>
+              <a href="#" class="nav-item" id="member-login-link"
+                >Member Login</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div id="home-container"></div>
+
+    <div id="footer-container"></div>
+
+    <script>
+      function openDrawer() {
+        document.getElementById("leftDrawer").style.transform = "translateX(0)";
+      }
+      function closeDrawer() {
+        document.getElementById("leftDrawer").style.transform =
+          "translateX(-100%)";
+      }
+      const navItems = document.querySelectorAll(".nav-item");
+      navItems.forEach((item) => {
+        item.addEventListener("click", closeDrawer);
+      });
+    </script>
+
+    <script>
+      const links = document.querySelectorAll("nav ul li a");
+
+      links.forEach((link) => {
+        link.addEventListener("click", (event) => {
+          const href = event.target.getAttribute("href");
+          const linkId = event.target.getAttribute("id");
+
+          links.forEach((link) => {
+            link.classList.remove("active");
+          });
+
+          event.target.classList.add("active");
+
+          if (linkId === "home-link") {
+            fetch("Home.html")
+              .then((response) => response.text())
+              .then((html) => {
+                document.getElementById("home-container").innerHTML = html;
+              });
+          } else if (linkId === "doner-link") {
+            fetch("Doner.html")
+              .then((response) => response.text())
+              .then((html) => {
+                document.getElementById("home-container").innerHTML =
+                  document.getElementById("home-container").innerHTML = html;
+              });
+          } else if (linkId === "gallary-link") {
+            fetch("Gallary.html")
+              .then((response) => response.text())
+              .then((html) => {
+                document.getElementById("home-container").innerHTML = html;
+              });
+          } else if (linkId === "history-link") {
+            fetch("History.html")
+              .then((response) => response.text())
+              .then((html) => {
+                document.getElementById("home-container").innerHTML = html;
+              });
+          } else if (linkId === "contact-link") {
+            fetch("Contact.html")
+              .then((response) => response.text())
+              .then((html) => {
+                document.getElementById("home-container").innerHTML = html;
+              });
+          } else if (linkId === "contribute-link") {
+            fetch("Contribute.html")
+              .then((response) => response.text())
+              .then((html) => {
+                document.getElementById("home-container").innerHTML = html;
+              });
+          } else if (linkId === "commitee-link") {
+            fetch("Commitee.html")
+              .then((response) => response.text())
+              .then((html) => {
+                document.getElementById("home-container").innerHTML = html;
+              });
+          } else if (linkId === "member-login-link") {
+            fetch("MemberLogin.html")
+              .then((response) => response.text())
+              .then((html) => {
+                document.getElementById("home-container").innerHTML = html;
+              });
+          }
+
+          event.preventDefault();
+        });
+      });
+
+      fetch("Home.html")
+        .then((response) => response.text())
+        .then((html) => {
+          document.getElementById("home-container").innerHTML = html;
+        });
+
+      fetch("footer.html")
+        .then((response) => response.text())
+        .then((html) => {
+          document.getElementById("footer-container").innerHTML = html;
+        });
+    </script>
+  </body>
+</html>

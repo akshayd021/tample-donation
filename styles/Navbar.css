@@ -1,17 +1,30 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif !important;
+}
+
+
 .navbar-rr {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #be161e;
-  padding: 1.5rem;
+  background-color: #fff;
+  padding: 1rem;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   display: none;
 }
-
+.d {
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
 .menu-icon {
   display: none;
 }
-.d .yellow-btn {
+.d .yellow-button {
   background-color: #be161e;
   padding: 5px 20px;
   color: white;
@@ -19,8 +32,7 @@
   border-radius: 5px;
   position: absolute;
   right: 15px;
-  align-items: center;
-  justify-content: center;
+  bottom: 8px !important;
 }
 .left-drawer {
   position: fixed;
@@ -61,7 +73,33 @@
 .drawer-content {
   padding: 2rem;
 }
+.drawer-content ul {
+}
+.drawer-content ul li {
+  margin-bottom: 20px;
+  text-decoration: none;
+  list-style: none;
 
+  border-bottom: 2px solid black;
+}
+.drawer-content li a {
+  text-decoration: none;
+}
+
+.drawer-content ul li a {
+  text-decoration: none;
+  list-style: none;
+  transition: color 0.3s;
+  font-size: 24px;
+}
+
+.drawer-content ul li a:hover {
+  color: #be161e;
+}
+
+.drawer-content ul li a.active {
+  color: #be161e;
+}
 .nav-items {
   list-style: none;
   padding: 0;
@@ -127,8 +165,17 @@
   .left-drawer {
     width: 80%;
   }
+  .space-bw {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
   .navbar-rr {
     display: block;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    background: white;
   }
   .drawer-d {
     display: none;
@@ -139,5 +186,14 @@
   }
   .nav-item {
     margin-bottom: 1rem;
+  }
+  .navbar-rr .yellow-button {
+    background-color: #be161e;
+    padding: 5px 15px;
+    color: white;
+    border: 1px solid #be161e;
+    border-radius: 5px;
+    position: absolute;
+    right: 15px;
   }
 }
