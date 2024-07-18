@@ -80,6 +80,10 @@ body {
   align-items: center;
   gap: 8px;
 }
+.yellow-btn:hover {
+  transform: scale(1.1); 
+  border: 1px solid #ffc700;
+}
 .icon {
   font-size: 15px;
 }

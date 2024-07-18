@@ -105,6 +105,10 @@ body {
   justify-content: center;
   margin: 10px auto;
 }
+.yellow-btn:hover {
+  transform: scale(1.1); 
+  border: 1px solid #ffc700;
+}
 .map img {
   width: 100%;
   height: 600px;

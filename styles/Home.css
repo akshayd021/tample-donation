@@ -13,6 +13,20 @@ body {
   text-align: center;
   text-transform: capitalize;
 }
+.heading-amount {
+  font-size: 25px;
+  color: #be161e;
+  font-weight: 500;
+  margin-top: 20px;
+  text-transform: capitalize;
+}
+.yellow-head-amount {
+  color: #ffc700;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif !important;
+  font-size: 25px;
+  margin-bottom: 5px;
+}
 .yellow-head {
   text-align: center;
   color: #ffc700;
@@ -74,6 +88,10 @@ div.gallery img {
   border: 1px solid #be161e;
   border-radius: 5px;
   display: flex;
+}
+.yellow-btn:hover {
+  transform: scale(1.1); 
+  border: 1px solid #ffc700;
 }
 .center {
   display: flex;
@@ -230,6 +248,72 @@ div.gallery img {
 .accordion-head {
   color: #ffc700;
 }
+
+.chip {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 20px auto;
+}
+.chip-text {
+  border: 1.5px dotted #00000080;
+  padding: 4px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.chip-text:hover {
+  background-color: #be161e;
+  border: 1px dotted #ffc700;
+  color: white;
+}
+.choose-amount h4 {
+  font-size: 18px;
+  text-transform: capitalize;
+  font-weight: 500;
+  color: #be161e;
+  margin-top: 20px;
+}
+.input-group {
+  width: 100%;
+}
+.input-group input {
+  border: 1px solid #9f9f9f;
+  font-size: 14px;
+}
+
+.form-control {
+  width: 100%;
+  margin-top: 20px;
+  height: 40px;
+}
+.ml-10 {
+  margin-left: 20px;
+}
+
+.donate-button {
+  width: 150px;
+  height: 40px;
+  /* margin-left: -50px !important; */
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+  margin-top: 20px;
+  background: #be161e;
+  border: 0px solid #be161e;
+  border-radius: 6px;
+  color: #fff;
+}
+.border {
+  border: 1px solid #9f9f9f;
+  border-radius: 10px;
+}
+.donate-img {
+  height: 100%;
+}
+.donate-img img {
+  height: 100%;
+  object-fit: cover;
+}
+
 @media only screen and (max-width: 600px) {
   .heading {
     font-size: 18px;
@@ -252,6 +336,36 @@ div.gallery img {
   .payment {
     padding: 10px;
   }
+  .ml-10 {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .chip-text {
+    padding: 2px 8px;
+  }
+  .heading-amount {
+    font-size: 16px;
+  }
+  .yellow-head-amount {
+    font-size: 16px;
+  }
+  .choose-amount h4 {
+    font-size: 13px;
+  }
+  .form-control {
+    height: 38px;
+  }
+  .donate-button {
+    height: 38px;
+  }
+  .donate-img img {
+    width: 50%;
+    height: 50%;
+    justify-content: center;
+    display: flex;
+    margin-top: 20px;
+    margin: 20px auto 0 auto;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
@@ -269,5 +383,38 @@ div.gallery img {
   }
   .payment {
     padding: 15px;
+  }
+  .ml-10 {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .chip-text {
+    padding: 3px 12px;
+  }
+  .heading-amount {
+    font-size: 20px;
+  }
+  .yellow-head-amount {
+    font-size: 20px;
+  }
+  .choose-amount h4 {
+    font-size: 16px;
+  }
+  .input-group {
+    margin-bottom: 10px;
+  }
+  .form-control {
+    height: 38px;
+  }
+  .donate-button {
+    height: 38px;
+  }
+  .donate-img img {
+    width: 100%;
+    height: 80%;
+    justify-content: center;
+    display: flex;
+    margin: 20px auto 0 auto;
+    bottom: 0;
   }
 }
